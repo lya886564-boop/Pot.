@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: itachi-md
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: OWNER_NUMBER
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.6-flash
+      - key: SERPAPI_KEY
+        sync: false
+      - key: WEATHER_API_KEY
+        sync: false
