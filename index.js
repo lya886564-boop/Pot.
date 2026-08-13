@@ -109,20 +109,21 @@ const OWNER_NUMBER_NORMALIZED =
     normalizePhoneNumber(
         OWNER_NUMBER
     );
+const OWNER_ALIASES = new Set([
+    '0120591509',
+    '120591509',
+    '+249120591509',
+    '249120591509+',
+    '249120591509',
 
-const OWNER_ALIASES =
-    new Set([
-        '0120591509',
-        '120591509',
-        '+249120591509',
-        '249120591509+',
-        '249120591509'
-    ].map(normalizePhoneNumber));
+    // WhatsApp LID الخاص بالمالك
+    '158270064971804@lid',
+    '158270064971804'
+].map(normalizePhoneNumber));
 
 OWNER_ALIASES.add(
     OWNER_NUMBER_NORMALIZED
 );
-
 /* =========================================================
    GLOBAL STATE
 ========================================================= */
