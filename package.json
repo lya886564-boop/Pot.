@@ -1,19 +1,15 @@
 {
-  "name": "itachi-whatsapp-bot",
+  "name": "itachi-bot",
   "version": "1.0.0",
-  "description": "ITACHI WhatsApp Bot - Baileys + Gemini + Google Search + Weather + Football",
+  "description": "ITACHI WhatsApp Bot - 60 أمر + 30 لعبة + 30 أداة + طقس",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": ">=20.18.0"
-  },
   "dependencies": {
-    "@google/genai": "^1.16.0",
-    "@whiskeysockets/baileys": "6.7.22",
-    "axios": "^1.11.0",
-    "cheerio": "^1.1.2",
-    "pino": "^9.9.0"
+    "@whiskeysockets/baileys": "^6.7.0",
+    "pino": "^9.0.0",
+    "axios": "^1.7.0",
+    "@google/generative-ai": "^0.21.0"
   }
 }
